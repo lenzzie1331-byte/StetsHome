@@ -1,0 +1,87 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="ERD 3нф" id="stets-er-final">
+    <mxGraphModel dx="5465" dy="2123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Пользователь&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID пользователя&lt;br&gt;Эл.почта&lt;br&gt;Пароль&lt;br&gt;Имя&lt;br&gt;Дата создания&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="300" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="access" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Доступ к дому&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID доступа&lt;br&gt;FK ID&amp;nbsp;пользователя&lt;br&gt;FK&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ID&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;дома&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;Роль пользователя&lt;br&gt;Дата создания&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="300" x="410" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="home" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Дом&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID&amp;nbsp;дома&lt;br&gt;Название&lt;br&gt;Адрес&lt;br&gt;Дата создания&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="300" x="840" y="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="room" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Комната&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID комнаты&lt;br&gt;FK ID дома&lt;br&gt;FK ID типа комнаты&lt;br&gt;Название&lt;br&gt;Иконка&lt;br&gt;Дата создания&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="300" x="1280" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="roomtype" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Тип комнаты&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK Идентификатор типа комнаты&lt;br&gt;Название&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="1820" y="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="scenario" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Сценарий&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID сценария&lt;br&gt;FK ID дома&lt;br&gt;Название&lt;br&gt;Время начала (необязательно)&lt;br&gt;Время окончания (необязательно)&lt;br&gt;Дата создания&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="300" x="60" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="device" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Устройство&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID устройства&lt;br&gt;FK ID дома&lt;br&gt;FK ID комнаты&lt;br&gt;FK ID типа устройства&lt;br&gt;Заводской номер&lt;br&gt;Модель&lt;br&gt;Название устройства&lt;br&gt;Статус&lt;br&gt;Режим энергосбережения&lt;br&gt;Дата добавления&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="330" x="710" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="devtype" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Тип устройства&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID типа устройства&lt;br&gt;Название&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="1280" y="512.5" as="geometry" />
+        </mxCell>
+        <mxCell id="scdev" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;Устройство в сценарии&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID устройства в сценарии&lt;br&gt;FK ID сценария&lt;br&gt;FK ID устройства&lt;br&gt;Действие (включить / выключить)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="330" x="710" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="scday" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;День недели в сценарии&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID дня в сценарии&lt;br&gt;FK ID сценария&lt;br&gt;FK ID дня недели&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="300" x="60" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="day" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;strokeWidth=1.5;labelBackgroundColor=default;" value="&lt;div style=&quot;font-weight: bold; text-align: center; padding: 7px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;День недели&lt;/div&gt;&lt;div style=&quot;padding:7px;line-height:1.45&quot;&gt;PK ID дня недели&lt;br&gt;Название&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="60" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="user" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;" target="access" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="home" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;" target="access" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="home" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;" target="room" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="roomtype" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;" target="room" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="home" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;exitX=0.107;exitY=1.015;exitDx=0;exitDy=0;exitPerimeter=0;" target="device" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="room" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;exitX=-0.014;exitY=0.615;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.002;entryY=0.359;entryDx=0;entryDy=0;entryPerimeter=0;" target="device" value="1 — 0..N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="devtype" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;" target="device" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="home" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;entryX=-0.01;entryY=0.289;entryDx=0;entryDy=0;entryPerimeter=0;" target="scenario" value="1 — N">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="30" />
+              <mxPoint x="-30" y="30" />
+              <mxPoint x="-30" y="457" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="scenario" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="scdev" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="device" style="rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;exitX=0.627;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.62;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="scdev" value="1 — N">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="scenario" style="rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="scday" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="day" style="rounded=0;html=1;strokeWidth=1.5;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;labelBackgroundColor=default;" target="scday" value="1 — N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
